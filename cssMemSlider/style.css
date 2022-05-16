@@ -148,3 +148,28 @@ img {
     border: 0.15rem solid rgb(57, 148, 190);
 
 }
+
+@media (max-width: 767px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "title"
+            "slider-mems"
+            "navigaion"
+            "slider-text";
+
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .navigation {
+        margin-top: 0.5em;
+        justify-self: center;
+    }
+
+    .text {
+        margin-top: 0;
+    }
+}
