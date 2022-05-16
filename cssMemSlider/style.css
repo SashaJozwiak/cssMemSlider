@@ -130,6 +130,10 @@ img {
 
 }
 
+.button:active .btn {
+    box-shadow: 0 0 1rem rgba(25, 25, 25, 0.8);
+}
+
 #radio1:checked~.navigation label:nth-child(1) .btn,
 #radio2:checked~.navigation label:nth-child(2) .btn,
 #radio3:checked~.navigation label:nth-child(3) .btn,
