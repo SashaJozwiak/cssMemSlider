@@ -4,6 +4,10 @@
     border: 0;
 }
 
+body {
+    background-color: aliceblue;
+}
+
 .container {
     margin: 0 auto;
     max-width: 50rem;
@@ -18,6 +22,11 @@
         "slider-text navigaion";
 
     padding: 0 0.5rem 0 0.5rem;
+}
+
+input {
+    appearance: none;
+    display: none;
 }
 
 .title {
@@ -63,6 +72,32 @@ img {
     border-radius: 0.3rem;
 }
 
+.text {
+    font-size: 1.8rem;
+    /* line-height: 2em; */
+    margin-left: 0.6rem;
+}
+
+#radio1:checked~.overflow .slider {
+    margin-left: 0;
+}
+
+#radio2:checked~.overflow .slider {
+    margin-left: -100%;
+}
+
+#radio3:checked~.overflow .slider {
+    margin-left: -200%;
+}
+
+#radio4:checked~.overflow .slider {
+    margin-left: -300%;
+}
+
+#radio5:checked~.overflow .slider {
+    margin-left: -400%;
+}
+
 .navigation {
     width: 14rem;
     /* align-self: end; */
@@ -89,7 +124,27 @@ img {
     transition: 0.3s;
 }
 
-input {
-    appearance: none;
-    display: none;
+.button:hover .btn {
+    background-color: rgba(57, 148, 190, 0.5);
+    box-shadow: 0 0 0.5rem rgba(57, 148, 190, 0.8);
+
+}
+
+#radio1:checked~.navigation label:nth-child(1) .btn,
+#radio2:checked~.navigation label:nth-child(2) .btn,
+#radio3:checked~.navigation label:nth-child(3) .btn,
+#radio4:checked~.navigation label:nth-child(4) .btn,
+#radio5:checked~.navigation label:nth-child(5) .btn {
+    background-color: rgb(55, 140, 180);
+    border: 0.15rem solid rgb(55, 140, 180);
+}
+
+#radio1:checked~.navigation label:nth-child(1):hover .btn,
+#radio2:checked~.navigation label:nth-child(2):hover .btn,
+#radio3:checked~.navigation label:nth-child(3):hover .btn,
+#radio4:checked~.navigation label:nth-child(4):hover .btn,
+#radio5:checked~.navigation label:nth-child(5):hover .btn {
+    background-color: rgb(57, 148, 190);
+    border: 0.15rem solid rgb(57, 148, 190);
+
 }
